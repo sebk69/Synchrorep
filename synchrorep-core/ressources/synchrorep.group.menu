@@ -1,0 +1,15 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+	<Name>Applications</Name>
+	<Menu>
+		<Name>System</Name>
+		<Menu>
+			<Name>Synchronize a group</Name>
+			<Directory>synchrorep.group.directory</Directory>
+			<Include>
+				<Category>synchrorep</Category>
+			</Include>
+		</Menu>
+	</Menu>
+</Menu>

@@ -1,0 +1,10 @@
+Package: synchrorep
+Version: 1.5-4
+Section: Utilities
+Priority: extra
+Architecture: i386
+Installed-Size: 300
+Maintainer: Sébastien Kus <seb@ktoi.fr>
+Depends: libsqlite3-0, libgtk2.0-0 (>=2.18.3-1)
+Description: a one click folder synchronization
+ This software is adressed essentialy to nomads persons or these who want to make backup and permit you to synchronize in a single click two directories, this mean copying files that are not in one in the other, modifications are also reported. The files that have been removed or replaced are put to trash after your confirmation. Synchronizable folders can be local, ssh, ftp, and samba shares.

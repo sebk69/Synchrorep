@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.4
+Type=Application
+Terminal=false
+Icon=Synchrorep
+Name[en]=Drag folder to synchronize
+Name[fr]=Glissez un dossier pour synchroniser
+Name[es]=Arrastre la carpeta para sincronizarla
+Exec=synchrorep --execute %u
+Name=Synchrorep
+Icon=synchrorep
+Comment[en]=Synchronize two folders
+Comment[fr]=Synchroniser deux répertoires
+Comment[es]=Sincronizar dos carpetas

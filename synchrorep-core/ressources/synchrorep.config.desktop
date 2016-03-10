@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Configure synchrorep
+Name[en]=Configure synchrorep
+Name[fr]=Configurer synchrorep
+Name[es]=Configurar synchrorep
+Comment[en]=Configure synchrorep
+Comment[fr]=Configurer synchrorep
+Comment[es]=Configurar synchrorep
+Exec=synchrorep --config
+Terminal=false
+Type=Application
+Icon=synchrorep
+Categories=System
+StartupNotify=true
