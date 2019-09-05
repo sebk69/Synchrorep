@@ -3,7 +3,7 @@
  * Originally : synchronization.cpp
  *
  *      This file is a part of synchrorep under GPL V3 licence
- *      ©2009-2010-2011 - Sébastien Kus
+ *      ©2009,2010,2011,2019 - Sébastien Kus
  *
  *  Synchronization and copy process
  *
@@ -100,7 +100,7 @@ execute :: new_folder(char *command_line_p, config_mode mode)
 		if(!mounting_from.mount())
 		{
 			text<<gettext("Impossible to mount disk/share of ")<<g_uri_unescape_string(configuration.get_from_folder_uri(), NULL);
-			cerr<<text<<endl;
+			//cerr<<text<<endl;
 			this->exchanges[i]->asking_info->asking((char*)text.str().c_str());
 			return;
 		}
@@ -109,7 +109,7 @@ execute :: new_folder(char *command_line_p, config_mode mode)
 		if(!mounting_to.mount())
 		{
 			text<<gettext("Impossible to mount disk/share of ")<<g_uri_unescape_string(configuration.get_to_folder_uri(), NULL);
-			cerr<<text<<endl;
+			//cerr<<text<<endl;
 			this->exchanges[i]->asking_info->asking((char*)text.str().c_str());
 			return;
 		}

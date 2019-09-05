@@ -4,7 +4,7 @@
  *  Created on: 7 juil. 2009
  *
  *      This file is a part of synchrorep under GPL V3 licence
- *      ©2009,2010,2011 - Sébastien Kus
+ *      ©2009,2010,2011,2019 - Sébastien Kus
  *
  *  application common class
  *
@@ -20,6 +20,7 @@
 #include "application.h"
 #include <strings.h>
 #include <stdlib.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include <sys/types.h>
 #include <unistd.h>
@@ -366,8 +367,8 @@ application :: about()
 
 	// program infos
 	gtk_about_dialog_set_program_name(GTK_ABOUT_DIALOG(about_box), "Synchrorep");
-	gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(about_box), "1.5.2");
-	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(about_box), "http://www.iceberg.0rg.fr");
+	gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(about_box), "1.5.5");
+	gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(about_box), "https://small-iceberg.dev");
 
 	// logo
 	GdkPixbuf			*icon = gdk_pixbuf_new_from_file(application :: files[ICON_FILE], NULL);
@@ -393,9 +394,17 @@ application :: about()
 	strcat(translators, "jedelwey\n");
 	strcat(translators, "Aiguanachein\n");
 	strcat(translators, "Paulomorales\n");
+	strcat(translators, "Vyacheslav Sharmanov\n");
 	strcat(translators, "Hector A. Mantellini\n");
+	strcat(translators, "Dennis Baudys\n");
+	strcat(translators, "Jan\n");
+	strcat(translators, "Jaroslaw\n");
+	strcat(translators, "Ogrodnik\n");
+	strcat(translators, "Julian Gehring\n");
+	strcat(translators, "Lunix\n");
+	strcat(translators, "Gamgster\n");
 	gtk_about_dialog_set_translator_credits(GTK_ABOUT_DIALOG(about_box), translators);
-	char				author[100] = "Sébastien Kus <sebastien.kus@free.fr>";
+	char				author[100] = "Sébastien Kus <seb@small-iceberg.dev>";
 	char				**authors = new char*[2];
 	authors[0] = author;
 	authors[1] = NULL;

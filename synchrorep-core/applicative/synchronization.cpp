@@ -2,7 +2,7 @@
  * synchronization.cpp
  *
  *      This file is a part of synchrorep under GPL V3 licence
- *      ©2009-2010 - Sébastien Kus
+ *      ©2009,2010,2019 - Sébastien Kus
  *
  *  Synchronization process
  *
@@ -413,8 +413,13 @@ synchronization :: synchronize(gpointer pexchanges)
 		_files_compare			compare_result;
 		if(md5sum_compare)
 			compare_result = binomial->md5sum_compare();
-		else
-			compare_result = binomial->compare(check_md5sum_on_modify);
+		else {
+			if(configuration.get_mode() == _sync) {
+				compare_result = binomial->sync_compare(check_md5sum_on_modify);
+			} else if(configuration.get_mode() == _copy) {
+				compare_result = binomial->copy_compare(check_md5sum_on_modify);
+			}
+		}
 		switch(compare_result)
 		{
 			case _from_modified:

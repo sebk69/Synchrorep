@@ -3,7 +3,7 @@
  *
  *  Created on: 20 déc. 2009
  *      This file is a part of synchrorep under GPL V3 licence
- *      ©2009 - Sébastien Kus
+ *      ©2009, 2019 - Sébastien Kus
  *
  *  Mutexing types and class for multi-tread using
  *
@@ -88,7 +88,7 @@ public:
 		GMutex			*temp_mutex = g_mutex_new();
 		g_mutex_trylock(temp_mutex);
 		g_cond_wait(this->answer_cond, temp_mutex);
-		g_mutex_unlock(this->ask_mutex);
+		g_mutex_unlock(temp_mutex);
 
 		// return dialog result
 		Result			result;

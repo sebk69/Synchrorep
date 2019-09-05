@@ -2,7 +2,7 @@
  * tc_file_binomial.cpp
  *
  *  Created on: 19 juil. 2009
- *      ©2009, 2010 - Sébastien Kus
+ *      ©2009, 2010, 2019 - Sébastien Kus
  *
  *  This source is under GNU/GLP V3 licence
  *
