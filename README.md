@@ -1,10 +1,10 @@
-#Synchrorep
+# Synchrorep
 
 Synchorep is an opensource software to synchronize two directories, that mean reporting all modifications of one to the other and vice versa. At the end of synchronization, both directories will be strictly the same.
 
 This is usefull principaly for nomads who work with a laptop or usb key but may interest also users who want making differencial copy to gain time.
 
-###Compilation on Ubuntu 18.04+
+### Compilation on Ubuntu 18.04+
 
 You must install some dependencies :
 ``` bash
@@ -19,18 +19,18 @@ $ make all
 $ sudo make install
 ```
 
-###Usage
+### Usage
 
 Note : Synchrorep require that you are in a nautilus or KDE environment
 
-#####To launch configuration
+##### To launch configuration
 type in a terminal :
 ``` bash
 $ synchrorep --config
 ```
 Or launch synchrorep icon in Gnome "Activity" window
 
-#####To start synchronization
+##### To start synchronization
 (for example for "/home/me" directory) in terminal
 ``` bash
 $ synchrorep
