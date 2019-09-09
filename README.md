@@ -33,6 +33,6 @@ Or launch synchrorep icon in Gnome "Activity" window
 #### To start synchronization
 (for example for "/home/me" directory) in terminal
 ``` bash
-$ synchrorep
+$ synchrorep --execute /home/me
 ```
 Or rigth click on folder in a nautilus window and choose "Synchronize..."
