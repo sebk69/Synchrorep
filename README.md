@@ -23,14 +23,14 @@ $ sudo make install
 
 Note : Synchrorep require that you are in a nautilus or KDE environment
 
-##### To launch configuration
+#### To launch configuration
 type in a terminal :
 ``` bash
 $ synchrorep --config
 ```
 Or launch synchrorep icon in Gnome "Activity" window
 
-##### To start synchronization
+#### To start synchronization
 (for example for "/home/me" directory) in terminal
 ``` bash
 $ synchrorep
