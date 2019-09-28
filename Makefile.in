@@ -86,8 +86,8 @@ clean:
 
 install:
 	test -d $DESTDIR || mkdir -p $DESTDIR
-        cp synchrorep $DESTDIR/synchrorep
-        chmod 755 $DESTDIR/synchrorep
+	cp synchrorep $DESTDIR/synchrorep
+	chmod 755 $DESTDIR/synchrorep
 	test -d /usr/lib || mkdir /usr/lib
 	test -d /usr/lib/nautilus || mkdir /usr/lib/nautilus
 	test -d /usr/lib/nautilus/extensions-2.0 || mkdir /usr/lib/nautilus/extensions-2.0
