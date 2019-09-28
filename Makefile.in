@@ -85,8 +85,7 @@ clean:
 	rm -f libnautilus-synchrorep.so
 
 install:
-	test -d /usr || mkdir /usr
-	test -d /usr/bin || mkdir /usr/bin
+	test -d $DESTDIR || mkdir -p $DESTDIR
 	cp synchrorep /usr/bin/synchrorep
 	test -d /usr/lib || mkdir /usr/lib
 	test -d /usr/lib/nautilus || mkdir /usr/lib/nautilus
