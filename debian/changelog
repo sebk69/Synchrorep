@@ -1,3 +1,5 @@
-synchrorep (1.5.5) stable; urgency=medium
+synchrorep (1.5.5-1) 1.5.5; urgency=low
 
-  -- Sébastien Kus <seb@small-iceberg.dev>  Thu, 01 Oct 2019 23:59:31 +0200
+  * Initial release. 
+
+ -- Sébastien Kus <seb@small-iceberg.dev>  Wed, 02 Oct 2019 00:15:04 +0200
